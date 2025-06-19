@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://i.pinimg.com/736x/fe/43/cc/fe43ccc1e854cfece6f9a4c5ce954ae6.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  padding: 2rem;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.header img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+}
+select, input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: none;
+  margin-top: 0.5rem;
+}
+button {
+  margin-top: 2rem;
+  width: 100%;
+  background: #ffcc00;
+  color: #000;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background: #ffd633;
+}
+.results {
+  margin-top: 2rem;
+}
+.result-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+}

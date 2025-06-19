@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore various Indian Government Welfare Schemes easily." />
+  <meta name="keywords" content="Government, Welfare Schemes, PM Kisan, PMJAY, MGNREGA, India" />
+  <meta name="author" content="Your Name" />
+  <title>Government Welfare Schemes</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    let currentIndex = 0;
+    function showSlide(index) {
+      const slides = document.querySelector('.slides');
+      const totalSlides = slides.children.length;
+      currentIndex = (index + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(-${currentIndex * 100}vw)`;
+    }
+
+    function nextSlide() { showSlide(currentIndex + 1); }
+    function prevSlide() { showSlide(currentIndex - 1); }
+
+    setInterval(nextSlide, 6000);
+    window.onload = () => showSlide(0);
+  </script>
+
+  <!-- Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,bn,ta,te,mr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-area">
+      <div class="logo"><img src="https://rural.gov.in/sites/all/themes/rural/images/emblem-dark.png" /></div>
+      <div class="logo-text">Govt Welfare Schemes</div>
+    </div>
+    <nav class="nav-links">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="contact.html">Contact Us</a>
+      <div id="google_translate_element"></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="slider-container">
+      <div class="arrow arrow-left" onclick="prevSlide()">&#10094;</div>
+      <div class="arrow arrow-right" onclick="nextSlide()">&#10095;</div>
+      <div class="slides">
+        <img src="https://i.pinimg.com/736x/b8/e4/3a/b8e43ad6279385733c32420f8a60bf13.jpg" alt="PM Kisan" />
+        <img src="https://i.pinimg.com/736x/6a/a0/06/6aa00647abd67c85c00ecc3a89b2700f.jpg" alt="PMJAY" />
+        <img src="https://i.pinimg.com/736x/65/69/44/656944dfeb8f41bafe0edba90ce4366c.jpg" alt="Swachh Bharat" />
+        <img src="https://i.pinimg.com/736x/8a/4f/ff/8a4fffa9d6b57394fe18e072464be761.jpg" alt="MGNREGA" />
+      </div>
+    </section>
+
+    <section class="info-section">
+      <section class="info-section">
+        <h2>Major Indian Government Welfare Schemes</h2>
+      
+        <div class="scheme">
+          <img src="https://i.pinimg.com/736x/b8/e4/3a/b8e43ad6279385733c32420f8a60bf13.jpg" alt="PM-KISAN Yojana">
+          <div>
+            <h3>PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)</h3>
+            <p>Provides direct income support of ₹6000/year to all landholding farmer families.</p>
+            <ul>
+              <li>Amount transferred in 3 equal installments.</li>
+              <li>Helps in agricultural and household expenses.</li>
+              <li>Online registration & transparent DBT process.</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="scheme">
+          <img src="https://i.pinimg.com/736x/6a/a0/06/6aa00647abd67c85c00ecc3a89b2700f.jpg" alt="Ayushman Bharat Yojana">
+          <div>
+            <h3>PMJAY (Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana)</h3>
+            <p>Offers health insurance cover up to ₹5 lakh/family/year for secondary & tertiary care.</p>
+            <ul>
+              <li>Free treatment at empanelled hospitals.</li>
+              <li>Over 10 crore families covered.</li>
+              <li>Cashless & paperless hospitalization.</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="scheme">
+          <img src="https://i.pinimg.com/736x/8a/4f/ff/8a4fffa9d6b57394fe18e072464be761.jpg" alt="MGNREGA Yojana">
+          <div>
+            <h3>MGNREGA (Mahatma Gandhi National Rural Employment Guarantee Act)</h3>
+            <p>Guarantees 100 days of wage employment to rural households.</p>
+            <ul>
+              <li>Empowers rural poor by providing job security.</li>
+              <li>Women participation encouraged.</li>
+              <li>Improves infrastructure in villages.</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="scheme">
+          <img src="https://i.pinimg.com/736x/48/8b/b8/488bb8f0d3369fcfb5dc68f56f5db3fe.jpg" alt="Ujjwala Yojana">
+          <div>
+            <h3>Ujjwala Yojana</h3>
+            <p>Provides free LPG connections to BPL families to promote clean cooking.</p>
+            <ul>
+              <li>Over 8 crore families benefitted.</li>
+              <li>Reduces indoor air pollution.</li>
+              <li>Empowers women with better health and convenience.</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="scheme">
+          <img src="https://i.pinimg.com/736x/05/2a/23/052a2327c5c0f2e7278f8f31143f3cac.jpg" alt="Pradhan Mantri Kaushal Vikas Yojana (PMKVY)">
+          <div>
+            <h3>Pradhan Mantri Kaushal Vikas Yojana (PMKVY)</h3>
+            <p>To provide skill training to youth for better employment and self-employment opportunities.</p>
+            <ul>
+              <li>To train youth in skills that are actually needed in the job market.</li>
+              <li>To make young people employable or help them start their own work.</li>
+              <li>To create a skilled workforce that supports India's economic growth.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer>
+    <div class="scheme-btn">
+      <a href="index.html">Find Scheme</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

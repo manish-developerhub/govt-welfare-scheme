@@ -1,0 +1,210 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 40px;
+      background-color: #222;
+      color: white;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav.nav-links {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    nav.nav-links a {
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg, #ff5f6d, #ffc371);
+      padding: 8px 16px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-size: 15px;
+    }
+
+    nav.nav-links a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background-color: white;
+      overflow: hidden;
+    }
+    
+    .slides {
+      display: flex;
+      transition: transform 1s ease-in-out;
+      width: 400vw;
+    }
+    
+    .slides img {
+      width: 100vw;
+      height: 300px;
+      object-fit: contain;
+      background-color: white;
+    }
+    
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 30px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+      user-select: none;
+    }
+    
+    .arrow-left { left: 10px; }
+    .arrow-right { right: 10px; }
+    
+
+    .scheme-btn {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .scheme-btn a {
+      font-size: 18px;
+      padding: 12px 28px;
+      background: linear-gradient(to right, #1d976c, #93f9b9);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .scheme-btn a:hover {
+      background: linear-gradient(to right, #11998e, #38ef7d);
+      transform: scale(1.05);
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 30px;
+      color: #555;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff3b3b;
+    }
+
+    #google_translate_element select {
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #1f4037, #99f2c8);
+      color: white;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    #google_translate_element select:hover {
+      background: linear-gradient(135deg, #16a085, #f4d03f);
+    }
+
+    @media (max-width: 768px) {
+      .slides img {
+        height: auto;
+      }
+      nav.nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #google_translate_element {
+        margin-top: 10px;
+      }
+    }
+
+    .info-section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .info-section h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #004080;
+    }
+    .scheme {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      background: #f4f9ff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .scheme img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .scheme h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+    .scheme p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+    .scheme ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+    .scheme li {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    @media (max-width: 700px) {
+      .scheme {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .scheme img {
+        width: 100%;
+        max-width: 350px;
+      }
+    }

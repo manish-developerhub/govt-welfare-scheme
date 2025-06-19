@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .contact-container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    .contact-container h2 {
+      text-align: center;
+      color: #333;
+    }
+    .contact-container label {
+      display: block;
+      margin-top: 10px;
+      color: #555;
+    }
+    .contact-container input, 
+    .contact-container textarea, 
+    .contact-container button {
+      width: 100%;
+      margin-top: 5px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .contact-container button {
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    .contact-container button:hover {
+      background-color: #0056b3;
+    }
+    .contact-info {
+      margin-top: 20px;
+      text-align: center;
+      color: #555;
+    }
+    .contact-info span {
+      display: block;
+      color: #007bff;
+      font-weight: bold;
+    }
+    .exit-button {
+      margin-top: 10px;
+      padding: 8px;
+      background-color: #e53935;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 14px;
+    }
+    .exit-button:hover {
+      background-color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="4" placeholder="Write your message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p>Or contact us directly:</p>
+      <span>📞 011-23063024</span>
+    </div>
+    <!-- Exit Button -->
+    <button class="exit-button" onclick="exitPage()">Exit</button>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      alert(`Thank you, ${name}! Your message has been sent.\nWe'll contact you at ${email} soon.`);
+      this.reset();
+    });
+
+    function exitPage() {
+      // Redirect to the home page or desired URL
+      window.location.href = "welcome.html"; // Replace 'home.html' with the correct home page path
+    }
+  </script>
+</body>
+</html>

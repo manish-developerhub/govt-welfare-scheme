@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Government Welfare Scheme Matcher</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <div class="header">
+        <img src="https://i.pinimg.com/736x/a9/48/fe/a948fec50a118144dd5c6cf520bb1fcf.jpg" alt="Government Logo">
+        <h1>Find Your Eligible Welfare Schemes</h1>
+      </div>
+
+      <label for="income">Annual Income (in ₹):</label>
+      <input type="number" id="income" placeholder="e.g., 120000" />
+
+      <label for="region">Region:</label>
+      <select id="region">
+        <option value="rural">Rural</option>
+        <option value="urban">Urban</option>
+      </select>
+
+      <label for="education">Education Level:</label>
+      <select id="education">
+        <option value="none">No Formal Education</option>
+        <option value="primary">Primary School</option>
+        <option value="highschool">High School</option>
+        <option value="graduate">Graduate</option>
+        <option value="postgraduate">Post Graduate</option>
+      </select>
+
+      <button onclick="matchSchemes()">Check Eligible Schemes</button>
+
+      <div class="results" id="results"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
